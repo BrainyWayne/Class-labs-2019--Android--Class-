@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Images">
+
+   <ImageView
+       android:id="@+id/imageCOS"
+       android:layout_width="wrap_content"
+       android:layout_height="400dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/cos"/>
+
+
+    <ImageView
+        android:id="@+id/imageFifa"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fifa"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnfifa"
+            android:layout_width="wrap_content"
+            android:text="FIFA"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="wrap_content"
+            android:text="COS"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
